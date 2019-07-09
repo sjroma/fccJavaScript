@@ -1,0 +1,99 @@
+/*Start by making some yellow stickies*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #665;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  font-size: 100%;
+  margin: 3em;
+}
+
+#title {
+  text-align: center;
+}
+
+.stickies {
+  list-style: none; /*remove bullet from the list item*/
+  overflow: hidden; /*clip and hide any overflow*/
+  padding: 3em;
+}
+
+.sticky-note {
+  float: left;
+  margin: 1em;
+}
+
+/*Use box-shadow to make the notes stand out*/
+/*Smooth the transition when a sticky is hovered. Make it so the transition is not sudden but rather gradually, over a quarter of a second*/
+.sticky-note_anchor {
+  background: #ffc; /*light yellow*/
+  box-shadow: 5px 5px 7px rgba(33,33,33,0.7);
+  color: #000;
+  display: block;
+  height: 17em; /*size the sticky*/
+  width: 17em;  /*size the sticky*/
+  padding: 1em;
+  text-decoration: none; /*remove underline from the list item*/
+  transition: transform .15s linear; /*linear meaning same speed from start to end*/
+}
+
+/*Zoom in when an individual sticky is hovered (larger drop-shadow and scale transform again*/
+/*The higher z-index makes the hovered sticky cover the others*/
+.sticky-note_anchor:hover, .sticky-note_anchor:focus {
+  box-shadow: 10px 10px 7px rgba(0,0,0,0.7);
+  position: relative;
+  transform: scale(1.25);
+  z-index: 5;
+}
+
+.sticky-note_title {
+  padding-bottom: 10px;
+}
+
+.sticky-note_text {
+  font-family: 'Indie Flower', cursive, 'Arial', sans-serif;
+  font-size: 180%;
+}
+
+/*Tilt all the stickies to the left because it looks cool*/
+.sticky-note_anchor {
+  transform: rotate(-6deg);
+}
+
+/*Make the stickies look randomly tilted, otherwise they tilt uniformly*/
+/*Tilt every even sticky to the right*/
+/*Make every second sticky lightgreen*/
+ul li:nth-child(even) a {
+  background: #cfc; /*very lightgreen*/
+  transform: rotate(4deg);
+  position: relative;
+  top: 5px;
+}
+
+/*Tilt every third sticky to the left*/
+/*Make every third sticky a lightblue*/
+ul li:nth-child(3n) a {
+  background: #ccf; /*lightblue-ish*/
+  transform: rotate(-3deg);
+  position: relative;
+  top: -5px;
+}
+
+/*Complete the randomness by tilting every fifth sticky*/
+ul li:nth-child(5n) a {
+  transform: rotate(5deg);
+  position: relative;
+  top: -10px;
+}
+
+footer {
+  text-align: center;
+}
+
+.citation {
+  font-size: small;
+}
