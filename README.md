@@ -15,7 +15,7 @@ and then culminates with five projects for the student to complete in order to b
 * The projects are;  
   [ ] Palindrome Checker  
   [ ] Roman Numeral Converter  
-  [ ] Caesers Cipher  
+  [ ] Caesar Cipher  
   [ ] Telephone Number Validator  
   [ ] Cash Register 
 
