@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Interactive Basic Algorithm Scripting</title>
+
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://use.fontawesome.com/f3e446f627.js"></script>
+  <link rel="stylesheet" href="styles/interactiveBasicAS.css">
+  <style>
+  </style>
+</head>
+
+<body>
+  <div class="container-fluid">
+
+    <h1 class="text-center">Basic Algorithm Scripting</h1>
+    <h2 class="text-muted text-center">An Interactive View</h2>
+
+    <div class="row">
+      <div class="col-md-6">
+        <div class="user-interact">
+
+          <form id="form" onsubmit="mainInput(); return false" class="js-selector">
+            
+            <select name="script" id="dropdown" onchange="dropdownChange(); return false" class="dropdown">
+              <option value="cToF">Celsius to Fahrenheit</option>
+              <option value="revString">Reverse a String</option>
+              <option value="factorial">Factorialize a Positive Integer</option>
+              <option value="longest">Find Longest Word</option>
+              <option value="largestNums">Largest Numbers in Arrays</option>
+              <option value="ending">Confirm Ending</option>
+              <option value="repeat">Repeat a String</option>
+              <option value="truncate">Truncate a String</option>
+              <option value="find">Find and Keep</option>
+              <option value="bool">Boolean Primative</option>
+              <option value="titleCase">Title Case a Sentence</option>
+              <option value="sliceSplice">Slice &amp; Splice</option>
+              <option value="falsy">Falsy Bouncer</option>
+              <option value="belongs">Where Does It Belong</option>
+              <option value="mutate">Mutations</option>
+              <option value="chunks">Chunky Monkey</option>
+            </select>
+
+            <label for="textbox">Input:
+              <input name="input" type="text" id="textbox" class="input-area">
+            </label>
+
+            <div class="submit">
+              <button type="submit" class="btn btn-primary">Show Me</button>
+            </div>
+          </form>
+
+        </div>
+
+        <div id="output-area">
+          <p id="js-output"></p>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div id="test-describe">
+          <h4 id="descTitle" class="text-center">Convert Celsius to Fahrenheit</h4>
+          <p id="descText">The algorithm to convert from Celsius to Fahrenheit is;
+            <code>F = (C x (9/5)) + 32</code></p>
+          <h4>Test cases:</h4>
+          <ul id="descTests" class="list-unstyled">
+            <li> <var>-30</var> should return a value of <var>-22</var></li>
+            <li> <var>-10</var> should return a value of <var>14</var></li>
+            <li> <var>0</var> should return a value of <var>32</var></li>
+            <li> <var>20</var> should return a value of <var>68</var></li>
+            <li> <var>30</var> should return a value of <var>86</var></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-md-1">
+        <a class="btn btn-primary" href="index.html" role="button">Back</a>
+      </div>
+    </div>
+
+    <footer class="text-center">
+      <a class="btn btn-info" href="https://github.com/sjroma" target="_blank"><i class="fa fa-github" aria-hidden="true"></i> GitHub</a>
+    </footer>
+
+  </div>
+</body>
+
+</html>
