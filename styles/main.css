@@ -95,6 +95,12 @@ ul li:nth-child(5n) a {
   top: -1.2em;
 }
 
+.linkaway {
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+}
+
 footer {
   text-align: center;
 }
@@ -105,6 +111,6 @@ footer {
 }
 
 .link {
-  color: #ffc;
+  color: #cdf;
   text-decoration: none;
 }
