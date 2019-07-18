@@ -25,13 +25,13 @@
 
           <form id="form" onsubmit="mainInput(); return false" class="js-selector">
             
-            <select name="script" id="dropdown" onchange="dropdownChange(); return false" class="dropdown">
-              <option value="cToF">Celsius to Fahrenheit</option>
+            <select name="script" id="dropdown" onchange="dropdownChoice(); return false" class="dropdown">
+              <option value="cToF">Convert Celsius to Fahrenheit</option>
               <option value="revString">Reverse a String</option>
-              <option value="factorial">Factorialize a Positive Integer</option>
-              <option value="longest">Find Longest Word</option>
+              <option value="factorial">Factorialize a Number</option>
+              <option value="longest">Find Longest Word in a String</option>
               <option value="largestNums">Largest Numbers in Arrays</option>
-              <option value="ending">Confirm Ending</option>
+              <option value="ending">Confirm the Ending</option>
               <option value="repeat">Repeat a String</option>
               <option value="truncate">Truncate a String</option>
               <option value="find">Find and Keep</option>
@@ -66,7 +66,7 @@
           <p id="descText">The algorithm to convert from Celsius to Fahrenheit is;
             <code>F = (C x (9/5)) + 32</code></p>
           <h4>Test cases:</h4>
-          <ul id="descTests" class="list-unstyled">
+          <ul id="descTests">
             <li> <var>-30</var> should return a value of <var>-22</var></li>
             <li> <var>-10</var> should return a value of <var>14</var></li>
             <li> <var>0</var> should return a value of <var>32</var></li>
@@ -76,16 +76,22 @@
         </div>
       </div>
 
+<!--
+      Rethink this, since page opens in new tab, back would open yet another tab
       <div class="col-md-1">
-        <a class="btn btn-primary" href="index.html" role="button">Back</a>
+        <a class="btn btn-primary" href="index.html" role="button">
+          <i class="fa fa-arrow-left" aria-hidden="true"></i> Back</a>
       </div>
+-->
     </div>
 
     <footer class="text-center">
-      <a class="btn btn-info" href="https://github.com/sjroma" target="_blank"><i class="fa fa-github" aria-hidden="true"></i> GitHub</a>
+      <a class="btn btn-info" href="https://github.com/sjroma/fccJavaScript" target="_blank"><i class="fa fa-github" aria-hidden="true"></i> GitHub</a>
     </footer>
 
   </div>
+  
+  <script src="scripts/basicAS.js"></script>
 </body>
 
 </html>
