@@ -27,6 +27,10 @@ body {
   width: 16em;
 }
 
+.btn-primary {
+  width: 6em;
+}
+
 .btn:hover {
   background-color: #1d6fa3;
   cursor: pointer;
@@ -44,6 +48,10 @@ body {
   display: inline-block;
   height: 2em;
   width: 16em;
+}
+
+#descTests {
+  padding-left: 1em;
 }
 
 footer {
