@@ -5,7 +5,7 @@
 
 body {
   background-color: #f9f9f9;
-  font-family: sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .col-md-6 {
@@ -13,8 +13,10 @@ body {
 }
 
 .dropdown {
+  border: 1px solid #333;
   font-size: inherit;
   height: 2em;
+  margin-bottom: 0.5em;
   width: 16em;
 }
 
@@ -24,7 +26,6 @@ body {
   font-size: inherit;
   height: 2em;
   padding-left: 0.5em;
-  width: 16em;
 }
 
 .btn-primary {
@@ -47,11 +48,11 @@ body {
   border-radius: 0.4em;
   display: inline-block;
   height: 2em;
-  width: 16em;
+  width: 36em;
 }
 
 #descTests {
-  padding-left: 1em;
+  padding-left: 1.5em;
 }
 
 footer {
