@@ -39,16 +39,12 @@ body {
 }
 
 #output-area {
-  padding-top: 1.5em;
-}
-
-#js-output {
   background-color: #fff;
   border: 1px solid #333;
   border-radius: 0.4em;
-  display: inline-block;
   height: 2em;
-  width: 36em;
+  margin-top: 0.5em;
+  padding-left: 0.5em;
 }
 
 #descTests {
