@@ -142,9 +142,7 @@ function reverseString(str) {
 
 //factorialize a positive integer
 function factorialize(num) {
-  if (num < 0) {
-    return "NaN...input must be greater than or equal to 0";
-  } else if (num == 0) {
+  if (num == 0) {
     return answer = 1;
   } else {
     return answer = num * factorialize(num - 1);
@@ -310,9 +308,13 @@ function userInput(script, str) {
       break;
 
     case ("factorial"):
-      var factorialNum = factorialize(userInput);
-      output = `${userInput}! = ${factorialNum}`;
-      console.log('output=', output);
+      if (userInput <0) {
+        output = "Input must be 0 or greater";
+      } else {
+        var factorialNum = factorialize(userInput);
+        output = `${userInput}! = ${factorialNum}`;
+        console.log('output=', output);
+      }
       break;
 
     case ("longest"):
