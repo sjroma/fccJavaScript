@@ -10,10 +10,15 @@
 // Only integers greater than or equal to zero will be supplied to the function.
 
 function factorialize(num) {
-  if (num === 0) {
-    return answer = 1;
+  var answer = 0;
+  if (num < 0) {
+    return "Must be greater than or equal to 0"; 
+  } else if (num === 0) {
+    answer = 1;
+  } else {
+    answer = num * factorialize(num-1);
   }
-  return answer = num * factorialize(num - 1);
+  return answer;
 }
 
 //console.log("5! =", factorialize(5)); //should return 120
