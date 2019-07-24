@@ -2,6 +2,7 @@ console.log("Hey Steve, here's what you're logging to the console");
 
 //repaint page based on user choice from dropdown selector 
 function dropdownChoice() {
+    "use strict";
   let clearIn = document.getElementById("textbox").value = "";
   let clearIn2 = document.getElementById("number").value = "";
   let clearOut = document.getElementById("output-area").innerHTML = "";
@@ -132,7 +133,7 @@ function dropdownChoice() {
 
 //Basic Algorithm Scripts
 
-//convert celsis to fahrenheit
+//convert celsius to fahrenheit
 function convertToF(celsius) {
   let fahrenheit = (celsius * (9 / 5) + 32);
   return fahrenheit;
@@ -148,11 +149,13 @@ function reverseString(str) {
 
 //factorialize a positive integer
 function factorialize(num) {
+  var answer = 0;
   if (num == 0) {
-    return answer = 1;
+    answer = 1;
   } else {
-    return answer = num * factorialize(num - 1);
+    answer = num * factorialize(num - 1);
   }
+  return answer;
 }
 
 //find the longest word in a string
@@ -283,7 +286,7 @@ function chunkArrayInGroups(arr, size) {
     if (i % size !== size - 1)
       newArray.push(arr[i]);
     else {
-      newArray.push(arr[i])
+      newArray.push(arr[i]);
       finalArray.push(newArray);
       newArray = [];
     }
@@ -298,9 +301,11 @@ function chunkArrayInGroups(arr, size) {
 
 //populate the output area
 function userInput(script, str) {
+  "use strict";
   var script = document.getElementById("dropdown").value;
   let userInput = document.getElementById("textbox").value;
   let userInput2 = document.getElementById("number").value;
+  var output = '';
 
   switch (script) {
     case ("cToF"):
