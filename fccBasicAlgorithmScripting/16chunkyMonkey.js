@@ -8,7 +8,7 @@ function chunkArrayInGroups(arr, size) {
     if (i % size !== size - 1)
       newArray.push(arr[i]);
     else {
-      newArray.push(arr[i])
+      newArray.push(arr[i]);
       finalArray.push(newArray);
       newArray = [];
     }
