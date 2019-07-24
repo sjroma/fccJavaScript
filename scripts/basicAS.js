@@ -2,11 +2,11 @@ console.log("Hey Steve, here's what you're logging to the console");
 
 //repaint page based on user choice from dropdown selector 
 function dropdownChoice() {
-    "use strict";
-  let clearIn = document.getElementById("textbox").value = "";
-  let clearIn2 = document.getElementById("number").value = "";
-  let clearOut = document.getElementById("output-area").innerHTML = "";
-  let input2 = document.getElementById("number").style.visibility = "hidden";
+  "use strict";
+  document.getElementById("textbox").value = "";
+  document.getElementById("number").value = "";
+  document.getElementById("output-area").innerHTML = "";
+  document.getElementById("number").style.visibility = "hidden";
   var script = document.getElementById("dropdown").value;
 //  console.log('script value=', script);
 
@@ -16,6 +16,13 @@ function dropdownChoice() {
       document.getElementById("descText").innerHTML = "The algorithm to convert from Celsius to Fahrenheit is; <code>F = (C x (9/5)) + 32</code>";
       document.getElementById("descTests").innerHTML = "<li><var>-30</var> should return a value of <var>-22</var></li><li><var>-10</var> should return a value of <var>14</var></li><li><var>0</var> should return a value of <var>32</var></li><li><var>20</var> should return a value of <var>68</var></li><li><var>30</var> should return a value of <var>86</var></li>";
       document.getElementById("textbox").placeholder = "-40";
+      break;
+      
+    case "fToC":
+      document.getElementById("descTitle").innerHTML = "Convert Fahrenheit to Celsius";
+      document.getElementById("descText").innerHTML = "The algorithm to convert from Fahrenheit to Celsius is; <code>C = (F-32) * (5/9)</code><br> This wasn't a script in the course but being in the U.S. I have more reason to use this conversion.<br> One day I'll write a toggle so you don't have to choose from the dropdown.";
+      document.getElementById("descTests").innerHTML = "<li><i>-40</i> should return a value of <i>-40</i> (it's where the two temps cross)</li><li><i>32</i> should return a value of <i>0</i></li><li><i>68</i> should return a value of <i>20</i></li>";
+      document.getElementById("textbox").placeholder = "72";
       break;
 
     case "revString":
@@ -126,6 +133,9 @@ function dropdownChoice() {
       document.getElementById("descTests").innerHTML = "<li>[\"a\", \"b\", \"c\", \"d\"], 2 should return [[\"a\", \"b\"], [\"c\", \"d\"]]</li><li>[0, 1, 2, 3, 4, 5], 3 should return [[0, 1, 2], [3, 4, 5]]</li><li>[0, 1, 2, 3, 4, 5], 2 should return [[0, 1], [2, 3], [4, 5]]</li><li>[0, 1, 2, 3, 4, 5], 4 should return [[0, 1, 2, 3], [4, 5]]</li><li>[0, 1, 2, 3, 4, 5, 6], 3 should return [[0, 1, 2], [3, 4, 5], [6]]</li><li>[0, 1, 2, 3, 4, 5, 6, 7, 8], 4 should return [[0, 1, 2, 3], [4, 5, 6, 7], [8]]</li><li>[0, 1, 2, 3, 4, 5, 6, 7, 8], 2 should return [[0, 1], [2, 3], [4, 5], [6, 7], [8]]</li>";
       document.getElementById("textbox").placeholder = "[0, 1, 2, 3, 4, 5], 3";
       break;
+      
+    default:
+      //do nothing;
   }
 }
 //end page setup
@@ -135,8 +145,14 @@ function dropdownChoice() {
 
 //convert celsius to fahrenheit
 function convertToF(celsius) {
-  let fahrenheit = (celsius * (9 / 5) + 32);
+  const fahrenheit = (celsius * (9 / 5) + 32);
   return fahrenheit;
+}
+
+//convert from fahrenheit to celsius
+function convertToC(fahrenheit) {
+  const celsius = ((fahrenheit - 32) * (5/9));
+  return celsius;
 }
 
 //reverse a string
@@ -302,7 +318,7 @@ function chunkArrayInGroups(arr, size) {
 //populate the output area
 function userInput(script, str) {
   "use strict";
-  var script = document.getElementById("dropdown").value;
+  script = document.getElementById("dropdown").value;
   let userInput = document.getElementById("textbox").value;
   let userInput2 = document.getElementById("number").value;
   var output = '';
@@ -311,6 +327,12 @@ function userInput(script, str) {
     case ("cToF"):
       var faren = convertToF(userInput);
       output = `${userInput}°C equals ${faren}°F`;
+      console.log('output=', output);
+      break;
+      
+    case ("fToC"):
+      var celsius = convertToC(userInput);
+      output = `${userInput}°F equals ${celsius}°C`;
       console.log('output=', output);
       break;
 
@@ -393,6 +415,9 @@ function userInput(script, str) {
       output = chunkArrayInGroups(userInput);
       console.log('output=', output);
       break;
+      
+    default:
+      //do nothing;
   }
   document.getElementById("output-area").innerHTML = output;
 }
