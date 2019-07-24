@@ -23,9 +23,18 @@ body {
 .input-area {
   border: 1px solid #333;
   border-radius: 0.4em;
-  font-size: inherit;
   height: 2em;
+  margin-bottom: 0.25em;
   padding-left: 0.5em;
+}
+
+.input-area2 {
+  border: 1px solid #333;
+  border-radius: 0.4em;
+  height: 0em;
+  padding-left: 0.5em;
+  padding-bottom: 1.4em;
+  visibility: hidden;
 }
 
 .btn-primary {
