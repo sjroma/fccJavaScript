@@ -147,6 +147,7 @@ function dropdownChoice() {
 
 //convert celsius to fahrenheit
 function convertToF(celsius) {
+  var fahrenheit;
   const tempFahrenheit = (celsius * (9 / 5) + 32);
   fahrenheit = tempFahrenheit.toFixed(0);
   return fahrenheit;
@@ -154,6 +155,7 @@ function convertToF(celsius) {
 
 //convert from fahrenheit to celsius
 function convertToC(fahrenheit) {
+  var celsius;
   const tempCelsius = ((fahrenheit - 32) * (5/9));
   celsius = tempCelsius.toFixed(0);
   return celsius;
