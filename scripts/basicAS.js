@@ -432,3 +432,5 @@ function userInput(script, str) {
   }
   document.getElementById("output-area").innerHTML = output;
 }
+
+document.getElementById("dropdown").onchange = function() {dropdownChoice()};
