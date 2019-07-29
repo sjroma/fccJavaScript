@@ -57,7 +57,9 @@ function dropdownChoice() {
       document.getElementById("descTitle").innerHTML = "Confirm the Ending";
       document.getElementById("descText").innerHTML = "- Check if a string (first argument, <code>str</code>) ends with the given target string (second argument, <code>target</code>).<br> - This challenge <em>can</em> be solved with the <code>.endsWith()</code> method, which was introduced in ES2015. But for the purpose of this challenge, we would like you to use one of the JavaScript substring methods instead.";
       document.getElementById("descTests").innerHTML = "<li>\"Bastian\", \"n\" should return true</li><li>\"Congratulation\", \"on\" should return true</li><li>\"Connor\", \"n\" should return false</li><li>\"Walking on water and developing software from a specification are easy if both are frozen\", \"specification\" should return false</li><li>\"He has to give me a new name\", \"name\" should return true</li><li>\"Open sesame\", \"same\" should return true</li><li>\"Open sesame\", \"pen\" should return false</li><li>\"Open sesame\", \"game\" should return false</li><li>\"If you want to save our world, you must hurry. We dont know how much longer we can withstand the nothing\", \"mountain\" should return false</li><li>\"Abstraction\", \"action\" should return true</li>";
-      document.getElementById("textbox").placeholder = "bicycle, cycle";
+      document.getElementById("textbox").placeholder = "bicycle";
+      document.getElementById("number").style.visibility = "visible";
+      document.getElementById("number").placeholder = "cycle";
       break;
 
     case "repeat":
@@ -206,7 +208,9 @@ function largestOfFour(arr) {
 
 //confirm the ending is the same
 function confirmEnding(str, target) {
-  return str.indexOf(target, str.length - target.length) !== -1;
+  var doesIt = "";
+  doesIt = str.indexOf(target, str.length - target.length) !== -1;
+  return doesIt;
 }
 
 //repeat a string n number of times
@@ -364,7 +368,7 @@ function userInput(script, str) {
       break;
 
     case ("ending"):
-      output = confirmEnding(userInput);
+      output = confirmEnding(userInput, userInput2);
       console.log('output=', output);
       break;
 
