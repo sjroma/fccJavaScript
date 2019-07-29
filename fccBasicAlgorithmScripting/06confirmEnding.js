@@ -4,14 +4,20 @@
 //This challenge can be solved with the .endsWith() method, which was introduced in ES2015. But for 
 //the purpose of this challenge, we would like you to use one of the JavaScript substring methods instead.
 
+//function confirmEnding(str, target) {
+//  return str.indexOf(target, str.length - target.length) !== -1;
+//}
+
 function confirmEnding(str, target) {
-  return str.indexOf(target, str.length - target.length) !== -1;
+  var doesIt = "";
+  doesIt = str.indexOf(target, str.length - target.length) !== -1;
+  return doesIt;
 }
 
-//console.log(confirmEnding("Bastian", "n") //should return true.
+console.log(confirmEnding("Bastian", "n")); //should return true.
 
 console.log(confirmEnding("Congratulation", "on")); //should return true.
-//console.log(confirmEnding("Connor", "n")); //should return false.
+console.log(confirmEnding("Connor", "n")); //should return false.
 //console.log(confirmEnding("Walking on water and developing software from a specification are easy if both are frozen", "specification")); //should return false.
 //console.log(confirmEnding("He has to give me a new name", "name")); //should return true.
 //console.log(confirmEnding("Open sesame", "same")); //should return true.
