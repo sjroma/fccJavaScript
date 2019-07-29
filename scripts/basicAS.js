@@ -46,12 +46,12 @@ function dropdownChoice() {
       document.getElementById("textbox").placeholder = "May the Fourth is Star Wars day";
       break;
 
-    case "largestNums":
-      document.getElementById("descTitle").innerHTML = "Return Largest Numbers in Arrays";
-      document.getElementById("descText").innerHTML = "Return an array consisting of the largest number from each provided sub-array. For simplicity, the provided array will contain exactly 4 sub-arrays.<br> Remember, you can iterate through an array with a simple for loop, and access each member with array syntax <code>arr[i]</code>.";
-      document.getElementById("descTests").innerHTML = "<li>[[4, 5, 1, 3], [13, 27, 18, 26], [32, 35, 37, 39], [1000, 1001, 857, 1]] should return [5, 27, 39, 1001]</li><li>[[13, 27, 18, 26], [4, 5, 1, 3], [32, 35, 37, 39], [1000, 1001, 857, 1]] should return [27, 5, 39, 1001]</li><li>[[4, 9, 1, 3], [13, 35, 18, 26], [32, 35, 97, 39], [1000000, 1001, 857, 1]] should return [9, 35, 97, 1000000]</li><li>[[17, 23, 25, 12], [25, 7, 34, 48], [4, -10, 18, 21], [-72, -3, -17, -10]] should return [25, 48, 21, -3]</li>";
-      document.getElementById("textbox").placeholder = "[[4, 5, 1, 3], [13, 27, 18, 26], [32, 35, 37, 39], [1000, 1001, 857, 1]]";
-      break;
+//    case "largestNums":
+//      document.getElementById("descTitle").innerHTML = "Return Largest Numbers in Arrays";
+//      document.getElementById("descText").innerHTML = "Return an array consisting of the largest number from each provided sub-array. For simplicity, the provided array will contain exactly 4 sub-arrays.<br> Remember, you can iterate through an array with a simple for loop, and access each member with array syntax <code>arr[i]</code>.";
+//      document.getElementById("descTests").innerHTML = "<li>[[4, 5, 1, 3], [13, 27, 18, 26], [32, 35, 37, 39], [1000, 1001, 857, 1]] should return [5, 27, 39, 1001]</li><li>[[13, 27, 18, 26], [4, 5, 1, 3], [32, 35, 37, 39], [1000, 1001, 857, 1]] should return [27, 5, 39, 1001]</li><li>[[4, 9, 1, 3], [13, 35, 18, 26], [32, 35, 97, 39], [1000000, 1001, 857, 1]] should return [9, 35, 97, 1000000]</li><li>[[17, 23, 25, 12], [25, 7, 34, 48], [4, -10, 18, 21], [-72, -3, -17, -10]] should return [25, 48, 21, -3]</li>";
+//      document.getElementById("textbox").placeholder = "[[4, 5, 1, 3], [13, 27, 18, 26], [32, 35, 37, 39], [1000, 1001, 857, 1]]";
+//      break;
 
     case "ending":
       document.getElementById("descTitle").innerHTML = "Confirm the Ending";
@@ -80,19 +80,19 @@ function dropdownChoice() {
       document.getElementById("number").placeholder = "6";
       break;
 
-    case "find":
-      document.getElementById("descTitle").innerHTML = "Finders Keepers";
-      document.getElementById("descText").innerHTML = "Create a function that looks through an array (first argument) and returns the first element in the array that passes a truth test (second argument). If no element passes the test, return undefined.";
-      document.getElementById("descTests").innerHTML = "<li>[1, 3, 5, 8, 9, 10], function(num) { return num % 2 === 0; } should return 8</li><li>[1, 3, 5, 9], function(num) { return num % 2 === 0; } should return undefined</li>";
-      document.getElementById("textbox").placeholder = "[21, 23, 25, 28, 29, 30], function(num) { return num % 2 === 0; }";
-      break;
+//    case "find":
+//      document.getElementById("descTitle").innerHTML = "Finders Keepers";
+//      document.getElementById("descText").innerHTML = "Create a function that looks through an array (first argument) and returns the first element in the array that passes a truth test (second argument). If no element passes the test, return undefined.";
+//      document.getElementById("descTests").innerHTML = "<li>[1, 3, 5, 8, 9, 10], function(num) { return num % 2 === 0; } should return 8</li><li>[1, 3, 5, 9], function(num) { return num % 2 === 0; } should return undefined</li>";
+//      document.getElementById("textbox").placeholder = "[21, 23, 25, 28, 29, 30], function(num) { return num % 2 === 0; }";
+//      break;
 
-    case "bool":
-      document.getElementById("descTitle").innerHTML = "Boo who";
-      document.getElementById("descText").innerHTML = "Check if a value is classified as a boolean primitive. Return true or false.<br> Boolean primitives are true and false.";
-      document.getElementById("descTests").innerHTML = "<li>true should return true</li><li>false should return true</li><li>[1, 2, 3] should return false</li><li>[ ].slice should return false</li><li>{ \"a\": 1 } should return false</li><li>1 should return false</li><li>NaN should return false</li><li>\"a\" should return false</li><li>\"true\" should return false</li><li>\"false\" should return false</li>";
-      document.getElementById("textbox").placeholder = "boring";
-      break;
+//    case "bool":
+//      document.getElementById("descTitle").innerHTML = "Boo who";
+//      document.getElementById("descText").innerHTML = "Check if a value is classified as a boolean primitive. Return true or false.<br> Boolean primitives are true and false.";
+//      document.getElementById("descTests").innerHTML = "<li>true should return true</li><li>false should return true</li><li>[1, 2, 3] should return false</li><li>[ ].slice should return false</li><li>{ \"a\": 1 } should return false</li><li>1 should return false</li><li>NaN should return false</li><li>\"a\" should return false</li><li>\"true\" should return false</li><li>\"false\" should return false</li>";
+//      document.getElementById("textbox").placeholder = "boring";
+//      break;
 
     case "titleCase":
       document.getElementById("descTitle").innerHTML = "Title Case a Sentence";
@@ -101,40 +101,40 @@ function dropdownChoice() {
       document.getElementById("textbox").placeholder = "wHo TyPeS LiKe ThIs?";
       break;
 
-    case "sliceSplice":
-      document.getElementById("descTitle").innerHTML = "Slice and Splice";
-      document.getElementById("descText").innerHTML = "You are given two arrays and an index.<br>Use the array methods <code>slice()</code> and <code>splice()</code> to copy each element of the first array into the second array, in order.<br> Begin inserting elements at index <code>n</code> of the second array.<br> Return the resulting array. The input arrays should remain the same after the function runs.";
-      document.getElementById("descTests").innerHTML = "<li>[1, 2, 3], [4, 5], 1 should return [4, 1, 2, 3, 5]</li><li>[1, 2], [\"a\", \"b\"], 1 should return [\"a\", 1, 2, \"b\"]</li><li>[\"claw\", \"tentacle\"], [\"head\", \"shoulders\", \"knees\", \"toes\"], 2 should return [\"head\", \"shoulders\", \"claw\", \"tentacle\", \"knees\", \"toes\"]</li><li>All elements from the first array should be added to the second array in their original order</li><li>The first array should remain the same after the function runs</li><li>The second array should remain the same after the function runs</li>";
-      document.getElementById("textbox").placeholder = "['and'], ['slice', 'dice'], 1";
-      break;
+//    case "sliceSplice":
+//      document.getElementById("descTitle").innerHTML = "Slice and Splice";
+//      document.getElementById("descText").innerHTML = "You are given two arrays and an index.<br>Use the array methods <code>slice()</code> and <code>splice()</code> to copy each element of the first array into the second array, in order.<br> Begin inserting elements at index <code>n</code> of the second array.<br> Return the resulting array. The input arrays should remain the same after the function runs.";
+//      document.getElementById("descTests").innerHTML = "<li>[1, 2, 3], [4, 5], 1 should return [4, 1, 2, 3, 5]</li><li>[1, 2], [\"a\", \"b\"], 1 should return [\"a\", 1, 2, \"b\"]</li><li>[\"claw\", \"tentacle\"], [\"head\", \"shoulders\", \"knees\", \"toes\"], 2 should return [\"head\", \"shoulders\", \"claw\", \"tentacle\", \"knees\", \"toes\"]</li><li>All elements from the first array should be added to the second array in their original order</li><li>The first array should remain the same after the function runs</li><li>The second array should remain the same after the function runs</li>";
+//      document.getElementById("textbox").placeholder = "['and'], ['slice', 'dice'], 1";
+//      break;
 
-    case "falsy":
-      document.getElementById("descTitle").innerHTML = "Falsy Bouncer";
-      document.getElementById("descText").innerHTML = "Remove all falsy values from an array.<br> Falsy values in JavaScript are <code>false</code>, <code>null</code>, <code>0</code>, <code>\"\"</code>, <code>undefined</code>, and <code>NaN</code>.<br> Hint: Try converting each value to a Boolean.";
-      document.getElementById("descTests").innerHTML = "<li>[7, \"ate\", \" \", false, 9] should return [7, \"ate\", 9]</li><li>[\"a\", \"b\", \"c\"] should return [\"a\", \"b\", \"c\"]</li><li>[false, null, 0, NaN, undefined, \" \"] should return [ ]</li><li>[1, null, NaN, 2, undefined] should return [1, 2]</li>";
-      document.getElementById("textbox").placeholder = "[7, 'ate', ' ', false, true, 9]";
-      break;
+//    case "falsy":
+//      document.getElementById("descTitle").innerHTML = "Falsy Bouncer";
+//      document.getElementById("descText").innerHTML = "Remove all falsy values from an array.<br> Falsy values in JavaScript are <code>false</code>, <code>null</code>, <code>0</code>, <code>\"\"</code>, <code>undefined</code>, and <code>NaN</code>.<br> Hint: Try converting each value to a Boolean.";
+//      document.getElementById("descTests").innerHTML = "<li>[7, \"ate\", \" \", false, 9] should return [7, \"ate\", 9]</li><li>[\"a\", \"b\", \"c\"] should return [\"a\", \"b\", \"c\"]</li><li>[false, null, 0, NaN, undefined, \" \"] should return [ ]</li><li>[1, null, NaN, 2, undefined] should return [1, 2]</li>";
+//      document.getElementById("textbox").placeholder = "[7, 'ate', ' ', false, true, 9]";
+//      break;
 
-    case "belongs":
-      document.getElementById("descTitle").innerHTML = "Where do I Belong";
-      document.getElementById("descText").innerHTML = "Return the lowest index at which a value (second argument) should be inserted into an array (first argument) once it has been sorted. The returned value should be a number.<br> For example, <code>getIndexToIns([1,2,3,4], 1.5)</code> should return <code>1</code> because it is greater than <code>1</code> (index 0), but less than <code>2</code> (index 1).<br> Likewise, <code>getIndexToIns([20,3,5], 19)</code> should return <code>2</code> because once the array has been sorted it will look like <code>[3,5,20]</code> and <code>19</code> is less than <code>20</code> (index 2) and greater than <code>5</code> (index 1).";
-      document.getElementById("descTests").innerHTML = "<li>[10, 20, 30, 40, 50], 35 should return a number</li><li>[10, 20, 30, 40, 50], 35 should return 3</li><li>[10, 20, 30, 40, 50], 30 should return 2</li><li>[40, 60], 50 should return 1</li><li>[3, 10, 5], 3 should return 0</li><li>[5, 3, 20, 3], 5 should return 2</li><li>[2, 20, 10], 19 should return 2</li><li>[2, 5, 10], 15 should return 3</li><li>[ ], 1 should return 0</li>";
-      document.getElementById("textbox").placeholder = "[3, 1, 2], 2.5";
-      break;
+//    case "belongs":
+//      document.getElementById("descTitle").innerHTML = "Where do I Belong";
+//      document.getElementById("descText").innerHTML = "Return the lowest index at which a value (second argument) should be inserted into an array (first argument) once it has been sorted. The returned value should be a number.<br> For example, <code>getIndexToIns([1,2,3,4], 1.5)</code> should return <code>1</code> because it is greater than <code>1</code> (index 0), but less than <code>2</code> (index 1).<br> Likewise, <code>getIndexToIns([20,3,5], 19)</code> should return <code>2</code> because once the array has been sorted it will look like <code>[3,5,20]</code> and <code>19</code> is less than <code>20</code> (index 2) and greater than <code>5</code> (index 1).";
+//      document.getElementById("descTests").innerHTML = "<li>[10, 20, 30, 40, 50], 35 should return a number</li><li>[10, 20, 30, 40, 50], 35 should return 3</li><li>[10, 20, 30, 40, 50], 30 should return 2</li><li>[40, 60], 50 should return 1</li><li>[3, 10, 5], 3 should return 0</li><li>[5, 3, 20, 3], 5 should return 2</li><li>[2, 20, 10], 19 should return 2</li><li>[2, 5, 10], 15 should return 3</li><li>[ ], 1 should return 0</li>";
+//      document.getElementById("textbox").placeholder = "[3, 1, 2], 2.5";
+//      break;
 
-    case "mutate":
-      document.getElementById("descTitle").innerHTML = "Mutations";
-      document.getElementById("descText").innerHTML = "Return true if the string in the first element of the array contains all of the letters of the string in the second element of the array.<br> For example, <code>['hello', 'Hello']</code>, should return true because all of the letters in the second string are present in the first, ignoring case.<br> The arguments <code>['hello', 'hey']</code> should return false because the string 'hello' does not contain a 'y'.<br> Lastly, <code>['Alien', 'line']</code>, should return true because all of the letters in 'line' are present in 'Alien'.";
-      document.getElementById("descTests").innerHTML = "<li>[\"hello\", \"hey\"] should return false</li><li>[\"hello\", \"Hello\"] should return true</li><li>[\"zyxwvutsrqponmlkjihgfedcba\", \"qrstu\"] should return true</li><li>[\"Mary\", \"Army\"] should return true</li><li>[\"Mary\", \"Aarmy\"] should return true</li><li>[\"Alien\", \"line\"] should return true</li><li>[\"floor\", \"for\"] should return true</li><li>[\"hello\", \"neo\"] should return false</li><li>[\"voodoo\", \"no\"] should return false</li>";
-      document.getElementById("textbox").placeholder = "Harley Davidson, ride";
-      break;
+//    case "mutate":
+//      document.getElementById("descTitle").innerHTML = "Mutations";
+//      document.getElementById("descText").innerHTML = "Return true if the string in the first element of the array contains all of the letters of the string in the second element of the array.<br> For example, <code>['hello', 'Hello']</code>, should return true because all of the letters in the second string are present in the first, ignoring case.<br> The arguments <code>['hello', 'hey']</code> should return false because the string 'hello' does not contain a 'y'.<br> Lastly, <code>['Alien', 'line']</code>, should return true because all of the letters in 'line' are present in 'Alien'.";
+//      document.getElementById("descTests").innerHTML = "<li>[\"hello\", \"hey\"] should return false</li><li>[\"hello\", \"Hello\"] should return true</li><li>[\"zyxwvutsrqponmlkjihgfedcba\", \"qrstu\"] should return true</li><li>[\"Mary\", \"Army\"] should return true</li><li>[\"Mary\", \"Aarmy\"] should return true</li><li>[\"Alien\", \"line\"] should return true</li><li>[\"floor\", \"for\"] should return true</li><li>[\"hello\", \"neo\"] should return false</li><li>[\"voodoo\", \"no\"] should return false</li>";
+//      document.getElementById("textbox").placeholder = "Harley Davidson, ride";
+//      break;
 
-    case "chunks":
-      document.getElementById("descTitle").innerHTML = "Chunky Monkey";
-      document.getElementById("descText").innerHTML = "Write a function that splits an <b>array</b> (first argument) into groups the length of <b>size</b> (second argument) and returns them as a two-dimensional array.";
-      document.getElementById("descTests").innerHTML = "<li>[\"a\", \"b\", \"c\", \"d\"], 2 should return [[\"a\", \"b\"], [\"c\", \"d\"]]</li><li>[0, 1, 2, 3, 4, 5], 3 should return [[0, 1, 2], [3, 4, 5]]</li><li>[0, 1, 2, 3, 4, 5], 2 should return [[0, 1], [2, 3], [4, 5]]</li><li>[0, 1, 2, 3, 4, 5], 4 should return [[0, 1, 2, 3], [4, 5]]</li><li>[0, 1, 2, 3, 4, 5, 6], 3 should return [[0, 1, 2], [3, 4, 5], [6]]</li><li>[0, 1, 2, 3, 4, 5, 6, 7, 8], 4 should return [[0, 1, 2, 3], [4, 5, 6, 7], [8]]</li><li>[0, 1, 2, 3, 4, 5, 6, 7, 8], 2 should return [[0, 1], [2, 3], [4, 5], [6, 7], [8]]</li>";
-      document.getElementById("textbox").placeholder = "[0, 1, 2, 3, 4, 5], 3";
-      break;
+//    case "chunks":
+//      document.getElementById("descTitle").innerHTML = "Chunky Monkey";
+//      document.getElementById("descText").innerHTML = "Write a function that splits an <b>array</b> (first argument) into groups the length of <b>size</b> (second argument) and returns them as a two-dimensional array.";
+//      document.getElementById("descTests").innerHTML = "<li>[\"a\", \"b\", \"c\", \"d\"], 2 should return [[\"a\", \"b\"], [\"c\", \"d\"]]</li><li>[0, 1, 2, 3, 4, 5], 3 should return [[0, 1, 2], [3, 4, 5]]</li><li>[0, 1, 2, 3, 4, 5], 2 should return [[0, 1], [2, 3], [4, 5]]</li><li>[0, 1, 2, 3, 4, 5], 4 should return [[0, 1, 2, 3], [4, 5]]</li><li>[0, 1, 2, 3, 4, 5, 6], 3 should return [[0, 1, 2], [3, 4, 5], [6]]</li><li>[0, 1, 2, 3, 4, 5, 6, 7, 8], 4 should return [[0, 1, 2, 3], [4, 5, 6, 7], [8]]</li><li>[0, 1, 2, 3, 4, 5, 6, 7, 8], 2 should return [[0, 1], [2, 3], [4, 5], [6, 7], [8]]</li>";
+//      document.getElementById("textbox").placeholder = "[0, 1, 2, 3, 4, 5], 3";
+//      break;
       
     default:
       //do nothing;
@@ -192,19 +192,19 @@ function findLongestWordLength(str) {
 }
 
 //find the largest numbers in an array of numbers
-function largestOfFour(arr) {
-  var largestArr = [];
-  for (var i = 0; i < arr.length; i++) {
-    var largestNum = arr[i][0];
-    for (var j = 0; j < arr[i].length; j++) {
-      if (arr[i][j] > largestNum) {
-        largestNum = arr[i][j];
-      }
-    }
-    largestArr.push(largestNum);
-  }
-  return largestArr;
-}
+//function largestOfFour(arr) {
+//  var largestArr = [];
+//  for (var i = 0; i < arr.length; i++) {
+//    var largestNum = arr[i][0];
+//    for (var j = 0; j < arr[i].length; j++) {
+//      if (arr[i][j] > largestNum) {
+//        largestNum = arr[i][j];
+//      }
+//    }
+//    largestArr.push(largestNum);
+//  }
+//  return largestArr;
+//}
 
 //confirm the ending is the same
 function confirmEnding(str, target) {
@@ -235,20 +235,20 @@ function truncateString(str, num) {
 }
 
 //return first element in an array that passes a truth test
-function findElement(arr, func) {
-  let num;
-  for (let i = 0; i < arr.length; i++) {
-    if (func(arr[i]) === true) {
-      num = arr[i];
-      return num;
-    }
-  }
-}
+//function findElement(arr, func) {
+//  let num;
+//  for (let i = 0; i < arr.length; i++) {
+//    if (func(arr[i]) === true) {
+//      num = arr[i];
+//      return num;
+//    }
+//  }
+//}
 
 //check if a value is a boolean primitive
-function booWho(bool) {
-  return (bool) === false || (bool) === true;
-}
+//function booWho(bool) {
+//  return (bool) === false || (bool) === true;
+//}
 
 //uppercase the first letter of each word in a sentence, all other letters lowercase
 function titleCase(str) {
@@ -261,63 +261,63 @@ function titleCase(str) {
 }
 
 //slice & splice
-function frankenSplice(arr1, arr2, n) {
-  let newArray = arr2.slice();
-  for (let i = 0; i < arr1.length; i++) {
-    newArray.splice(n, 0, arr1[i]);
-    n++;
-  }
-  return newArray;
-}
+//function frankenSplice(arr1, arr2, n) {
+//  let newArray = arr2.slice();
+//  for (let i = 0; i < arr1.length; i++) {
+//    newArray.splice(n, 0, arr1[i]);
+//    n++;
+//  }
+//  return newArray;
+//}
 
 //remove all fasly values from an array
-function bouncer(arr) {
-  return arr.filter(Boolean);
-}
+//function bouncer(arr) {
+//  return arr.filter(Boolean);
+//}
 
 //where does it belong
-function getIndexToIns(arr, num) {
-  arr.sort(function (a, b) {
-    return a - b;
-  });
-
-  for (var a = 0; a < arr.length; a++) {
-    if (arr[a] >= num)
-      return a;
-  }
-  return arr.length;
-}
+//function getIndexToIns(arr, num) {
+//  arr.sort(function (a, b) {
+//    return a - b;
+//  });
+//
+//  for (var a = 0; a < arr.length; a++) {
+//    if (arr[a] >= num)
+//      return a;
+//  }
+//  return arr.length;
+//}
 
 //mutations
-function mutation(arr) {
-  let lower = arr[1].toLowerCase();
-  let target = arr[0].toLowerCase();
-  for (var i = 0; i < lower.length; i++) {
-    if (target.indexOf(lower[i]) < 0)
-      return false;
-  }
-  return true;
-}
+//function mutation(arr) {
+//  let lower = arr[1].toLowerCase();
+//  let target = arr[0].toLowerCase();
+//  for (var i = 0; i < lower.length; i++) {
+//    if (target.indexOf(lower[i]) < 0)
+//      return false;
+//  }
+//  return true;
+//}
 
 //chunky monkey
-function chunkArrayInGroups(arr, size) {
-  let newArray = [];
-  let finalArray = [];
-
-  for (let i = 0; i < arr.length; i++) {
-    if (i % size !== size - 1)
-      newArray.push(arr[i]);
-    else {
-      newArray.push(arr[i]);
-      finalArray.push(newArray);
-      newArray = [];
-    }
-  }
-
-  if (newArray.length !== 0)
-    finalArray.push(newArray);
-  return finalArray;
-}
+//function chunkArrayInGroups(arr, size) {
+//  let newArray = [];
+//  let finalArray = [];
+//
+//  for (let i = 0; i < arr.length; i++) {
+//    if (i % size !== size - 1)
+//      newArray.push(arr[i]);
+//    else {
+//      newArray.push(arr[i]);
+//      finalArray.push(newArray);
+//      newArray = [];
+//    }
+//  }
+//
+//  if (newArray.length !== 0)
+//    finalArray.push(newArray);
+//  return finalArray;
+//}
 
 //End scripts
 
@@ -358,14 +358,15 @@ function userInput(script, str) {
       break;
 
     case ("longest"):
-      output = findLongestWordLength(userInput);
+      var longestLength = findLongestWordLength(userInput);
+      output = `The longest word is ${longestLength} characters`;
       console.log('output=', output);
       break;
 
-    case ("largestNums"):
-      output = largestOfFour(userInput);
-      console.log('output=', output);
-      break;
+//    case ("largestNums"):
+//      output = largestOfFour(userInput);
+//      console.log('output=', output);
+//      break;
 
     case ("ending"):
       output = confirmEnding(userInput, userInput2);
@@ -373,8 +374,12 @@ function userInput(script, str) {
       break;
 
     case ("repeat"):
-      output = repeatStringNumTimes(userInput, userInput2);
-      console.log('output=', output);
+      if (isNaN(userInput2)) {
+        output = "The second argument must be an integer";
+      } else {
+        output = repeatStringNumTimes(userInput, userInput2);
+        console.log('output=', output);
+      }
       break;
 
     case ("truncate"):
@@ -382,45 +387,45 @@ function userInput(script, str) {
       console.log('output=', output);
       break;
 
-    case ("find"):
-      output = findElement(userInput);
-      console.log('output=', output);
-      break;
+//    case ("find"):
+//      output = findElement(userInput);
+//      console.log('output=', output);
+//      break;
 
-    case ("bool"):
-      output = booWho(userInput);
-      console.log('output=', output);
-      break;
+//    case ("bool"):
+//      output = booWho(userInput);
+//      console.log('output=', output);
+//      break;
 
     case ("titleCase"):
       output = titleCase(userInput);
       console.log('output=', output);
       break;
 
-    case ("sliceSplice"):
-      output = frankenSplice(userInput);
-      console.log('output=', output);
-      break;
+//    case ("sliceSplice"):
+//      output = frankenSplice(userInput);
+//      console.log('output=', output);
+//      break;
 
-    case ("falsy"):
-      output = bouncer(userInput);
-      console.log('output=', output);
-      break;
+//    case ("falsy"):
+//      output = bouncer(userInput);
+//      console.log('output=', output);
+//      break;
 
-    case ("belongs"):
-      output = getIndexToIns(userInput);
-      console.log('output=', output);
-      break;
+//    case ("belongs"):
+//      output = getIndexToIns(userInput);
+//      console.log('output=', output);
+//      break;
 
-    case ("mutate"):
-      output = mutation(userInput);
-      console.log('output=', output);
-      break;
+//    case ("mutate"):
+//      output = mutation(userInput);
+//      console.log('output=', output);
+//      break;
 
-    case ("chunks"):
-      output = chunkArrayInGroups(userInput);
-      console.log('output=', output);
-      break;
+//    case ("chunks"):
+//      output = chunkArrayInGroups(userInput);
+//      console.log('output=', output);
+//      break;
       
     default:
       //do nothing;
