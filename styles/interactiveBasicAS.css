@@ -8,6 +8,15 @@ body {
   font-family: 'Open Sans', sans-serif;
 }
 
+#page-container {
+  position: relative;
+  min-height: 100vh;
+}
+
+#content-wrap {
+  padding-bottom: 5rem;     /*footer height*/
+}
+
 .col-md-6 {
   padding-top: 1.5em;
 }
@@ -60,6 +69,8 @@ body {
   padding-left: 1.5em;
 }
 
-footer {
-  padding-top: 4em;
+#footer {
+  position: absolute;
+  bottom: 0;
+  height: 5rem;             /*footer height*/
 }
