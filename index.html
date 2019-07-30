@@ -5,41 +5,57 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>FCC: Basic Algorithm Scripting</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://kit.fontawesome.com/40c7c66cc0.js"></script>
+  <link rel="stylesheet" href="styles/main.css">
   <style>
   </style>
-  <link rel="stylesheet" href="styles/main.css">
-  <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
 </head>
 
 <body>
-  <h1 class="title">freeCodeCamp JavaScript - Basic Algorithm Scripting</h1>
+  <div class="container-fluid" id="page-container">
 
-  <ul class="stickies">
-    <li class="sticky-note">
-      <a class="sticky-note_anchor" href="#">
-        <h2 class="sticky-note_title">console.log</h2>
-        <p class="sticky-note_text">Nothing to see here...open the console in Dev Tools</p>
-      </a>
-    </li>
-    <li class="sticky-note">
-      <a class="sticky-note_anchor" href="#">
-        <h2 class="sticky-note_title">Open Dev Tools in Mac</h2>
-        <p class="sticky-note_text">command + option + i</p>
-      </a>
-    </li>
-    <li class="sticky-note">
-      <a class="sticky-note_anchor" href="#">
-        <h2 class="sticky-note_title">Open Dev Tools in Windoze &amp; Linux</h2>
-        <p class="sticky-note_text">control + shift + i</p>
-      </a>
-    </li>
-  </ul>
-  
-  <h3 class="linkaway">Open the console or <a class="link" href="interactiveBasicAS.html" target="_blank">click for an interactive view</a> of the Basic Algorithm scripts</h3>
+    <div id="content-wrap">
 
-  <footer>
-    <p class="citation">Design idea from <a class="link" href="https://code.tutsplus.com/tutorials/create-a-sticky-note-effect-in-5-easy-steps-with-css3-and-html5--net-13934" target="_blank">Create a Sticky Note effect in 5 steps with CSS3 and HTML5</a></p>
-  </footer>
+      <h1 class="text-center">freeCodeCamp JavaScript</h1>
+      <h2 class="text-muted text-center">Basic Algorithm Scripting</h2>
+
+      <div class="card-deck">
+        <div class="card bg-light">
+          <div class="card-header text-center">console.log</div>
+          <div class="card-body text-center">
+            <p class="card-text">Nothing to see here...open the console in Dev Tools</p>
+          </div>
+        </div>
+        <div class="card bg-light">
+          <div class="card-header text-center">Open Dev Tools in Mac</div>
+          <div class="card-body text-center">
+            <p class="card-text">command + option + i</p>
+          </div>
+        </div>
+        <div class="card bg-light">
+          <div class="card-header text-center">Open Dev Tools in Linux and Windoze</div>
+          <div class="card-body text-center">
+            <p class="card-text">control + shift + i</p>
+          </div>
+        </div>
+      </div>
+
+      <p>Edit the file, uncomment the various scripts and uncomment the different hard-coded inputs to see the output of the scripts. </p>
+
+      <p class="linkaway">That can be tedious so you can <a id="link" href="interactiveBasicAS.html" target="_blank">click for an interactive view</a> of the Basic Algorithm scripts</p>
+
+    </div>
+
+    <div class="text-center" id="footer">
+      <a class="btn btn-info" href="https://github.com/sjroma/fccJavaScript" target="_blank"><i class="fab fa-github" aria-hidden="true"></i> GitHub</a>
+      <p class="copy">&copy; 2019 SJRoma</p>
+    </div>
+
+  </div>
 
   <script src="fccBasicAlgorithmScripting/01convertCtoF.js"></script>
   <!-- <script src="fccBasicAlgorithmScripting/02reverseString.js"></script>-->
@@ -57,7 +73,6 @@
   <!-- <script src="fccBasicAlgorithmScripting/14belongaWhere.js"></script>-->
   <!-- <script src="fccBasicAlgorithmScripting/15mutations.js"></script>-->
   <!-- <script src="fccBasicAlgorithmScripting/16chunkyMonkey.js"></script>-->
-
 </body>
 
 </html>
