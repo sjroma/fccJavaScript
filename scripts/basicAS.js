@@ -7,21 +7,21 @@ function dropdownChoice() {
   document.getElementById("number").value = "";
   document.getElementById("output-area").innerHTML = "";
   document.getElementById("number").style.visibility = "hidden";
-  var script = document.getElementById("dropdown").value;
+  let script = document.getElementById("dropdown").value;
 //  console.log('script value=', script);
 
   switch (script) {
     case "cToF":
       document.getElementById("descTitle").innerHTML = "Convert Celsius to Fahrenheit";
       document.getElementById("descText").innerHTML = "The algorithm to convert from Celsius to Fahrenheit is; <code>F = (C x (9/5)) + 32</code>";
-      document.getElementById("descTests").innerHTML = "<li><var>-30</var> should return a value of <var>-22</var></li><li><var>-10</var> should return a value of <var>14</var></li><li><var>0</var> should return a value of <var>32</var></li><li><var>20</var> should return a value of <var>68</var></li><li><var>30</var> should return a value of <var>86</var></li>";
+      document.getElementById("descTests").innerHTML = "<li><i>-30</i> should return a value of <i>-22</i></li><li><i>-10</i> should return a value of <i>14</i></li><li><i>0</i> should return a value of <i>32</i></li><li><i>20</i> should return a value of <i>68</i></li><li><i>30</i> should return a value of <i>86</i></li>";
       document.getElementById("textbox").placeholder = "-40";
       break;
       
     case "fToC":
       document.getElementById("descTitle").innerHTML = "Convert Fahrenheit to Celsius";
       document.getElementById("descText").innerHTML = "The algorithm to convert from Fahrenheit to Celsius is; <code>C = (F-32) * (5/9)</code><br> This wasn't a script in the course but being in the U.S. I have more reason to use this conversion.<br> One day I'll write a toggle so you don't have to choose from the dropdown.";
-      document.getElementById("descTests").innerHTML = "<li><i>-40</i> should return a value of <i>-40</i> (it's where the two scales cross)</li><li><i>32</i> should return a value of <i>0</i></li><li><i>68</i> should return a value of <i>20</i></li><li><i>212</i> (boiling point of water) should return a value of <i>100</i></li><li><i>451</i> (ignition temp of paper) should return a value of <i></i>233</li>";
+      document.getElementById("descTests").innerHTML = "<li><i>-40</i> should return a value of <i>-40</i> (it's where the two scales cross)</li><li><i>32</i> (freezing point of water) should return a value of <i>0</i></li><li><i>68</i> should return a value of <i>20</i></li><li><i>212</i> (boiling point of water) should return a value of <i>100</i></li><li><i>451</i> (ignition temp of paper) should return a value of <i>233</i></li>";
       document.getElementById("textbox").placeholder = "72";
       break;
 
@@ -34,8 +34,8 @@ function dropdownChoice() {
 
     case "factorial":
       document.getElementById("descTitle").innerHTML = "Factorialize a Number";
-      document.getElementById("descText").innerHTML = "Return the factorial of the provided integer. If the integer is represented with the letter n, a factorial is the product of all positive integers less than or equal to n. Factorials are often represented with the shorthand notation n!<br> For example: 5! = 1 x 2 x 3 x 4 x 5 = 120<br> Only integers greater than or equal to zero will be supplied to the function.";
-      document.getElementById("descTests").innerHTML = "<li><var>5</var> should return <var>120</var><li><var>10</var> should return <var>3628800</var><li><var>20</var> should return <var>2432902008176640000</var><li><var>0</var> should return <var>1</var>";
+      document.getElementById("descText").innerHTML = "Return the factorial of the provided integer. If the integer is represented with the letter n, a factorial is the product of all positive integers less than or equal to n. Factorials are often represented with the shorthand notation n!<br> For example: <code>5! = 1 x 2 x 3 x 4 x 5 = 120</code><br> Only integers greater than or equal to zero will be supplied to the function.";
+      document.getElementById("descTests").innerHTML = "<li><i>5</i> should return <i>120</i><li><i>10</i> should return <i>3628800</i><li><i>20</i> should return <i>2432902008176640000</i><li><i>0</i> should return <i>1</i>";
       document.getElementById("textbox").placeholder = "11";
       break;
 
@@ -43,7 +43,7 @@ function dropdownChoice() {
       document.getElementById("descTitle").innerHTML = "Find the Longest Word in a String";
       document.getElementById("descText").innerHTML = "Return the length of the longest word in the provided sentence.<br> The response should be a number";
       document.getElementById("descTests").innerHTML = "<li>\"The quick brown fox jumped over the lazy sleeping dog\" should return 8</li><li>\"May the force be with you\" should return 5</li><li>\"Google do a barrel roll\" should return 6</li><li>\"What is the average airspeed velocity of an unladen swallow\" should return 8</li><li>\"What if we try a super-long word such as otorhinolaryngology\" should return 19</li>";
-      document.getElementById("textbox").placeholder = "May the Fourth is Star Wars day";
+      document.getElementById("textbox").placeholder = "May the fourth is Star Wars day";
       break;
 
 //    case "largestNums":
@@ -98,7 +98,7 @@ function dropdownChoice() {
       document.getElementById("descTitle").innerHTML = "Title Case a Sentence";
       document.getElementById("descText").innerHTML = "Return the provided string with the first letter of each word capitalized. Make sure the rest of the word is in lower case.<br> For the purpose of this exercise, you should also capitalize connecting words like 'the' and 'of'.";
       document.getElementById("descTests").innerHTML = "<li>\"I'm a little tea pot\" should return a string</li><li>\"I'm a little tea pot\" should return \"I'm A Little Tea Pot\"</li><li>\"sHoRt AnD sToUt\" should return \"Short And Stout\"</li><li>\"HERE IS MY HANDLE HERE IS MY SPOUT\" should return \"Here Is My Handle Here Is My Spout\"</li>";
-      document.getElementById("textbox").placeholder = "wHo TyPeS LiKe ThIs?";
+      document.getElementById("textbox").placeholder = "WhO tYpEs LiKe ThIs?";
       break;
 
 //    case "sliceSplice":
@@ -147,7 +147,7 @@ function dropdownChoice() {
 
 //convert celsius to fahrenheit
 function convertToF(celsius) {
-  var fahrenheit;
+  let fahrenheit;
   const tempFahrenheit = (celsius * (9 / 5) + 32);
   fahrenheit = tempFahrenheit.toFixed(0);
   return fahrenheit;
@@ -155,7 +155,7 @@ function convertToF(celsius) {
 
 //convert from fahrenheit to celsius
 function convertToC(fahrenheit) {
-  var celsius;
+  let celsius;
   const tempCelsius = ((fahrenheit - 32) * (5/9));
   celsius = tempCelsius.toFixed(0);
   return celsius;
@@ -329,17 +329,17 @@ function userInput(script, str) {
   script = document.getElementById("dropdown").value;
   let userInput = document.getElementById("textbox").value;
   let userInput2 = document.getElementById("number").value;
-  var output = '';
+  let output = '';
 
   switch (script) {
     case ("cToF"):
-      var faren = convertToF(userInput);
+      let faren = convertToF(userInput);
       output = `${userInput}°C equals ${faren}°F`;
       console.log('output=', output);
       break;
       
     case ("fToC"):
-      var celsius = convertToC(userInput);
+      let celsius = convertToC(userInput);
       output = `${userInput}°F equals ${celsius}°C`;
       console.log('output=', output);
       break;
