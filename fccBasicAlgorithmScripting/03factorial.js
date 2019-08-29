@@ -1,4 +1,5 @@
 // Return the factorial of the provided integer.
+// This is a recursion example. Recursion is simply when a function calls itself.
 //
 // If the integer is represented with the letter n, a factorial is the product of all positive 
 // integers less than or equal to n.
@@ -9,8 +10,9 @@
 //
 // Only integers greater than or equal to zero will be supplied to the function.
 
+let answer = 0;
 function factorialize(num) {
-  var answer = 0;
+  "use strict";
   if (num < 0) {
     return "Must be greater than or equal to 0"; 
   } else if (num === 0) {
@@ -21,7 +23,7 @@ function factorialize(num) {
   return answer;
 }
 
-//console.log("5! =", factorialize(5)); //should return 120
-console.log("10! =", factorialize(10)); //should return 3628800
-//console.log("20! =", factorialize(20)); //should return 2432902008176640000
-//console.log("0! =", factorialize(0)); //should return 1
+//console.log("5! = " + factorialize(5)); //should return 120
+console.log("10! = " + factorialize(10)); //should return 3628800
+//console.log("20! = " + factorialize(20)); //should return 2432902008176640000
+//console.log("0! = " + factorialize(0)); //should return 1
