@@ -150,7 +150,7 @@ let fahrenheit;
 function convertToF(celsius) {
   "use strict";
   const tempFahrenheit = (celsius * (9 / 5) + 32);
-  fahrenheit = tempFahrenheit.toFixed(0);
+  fahrenheit = tempFahrenheit.toFixed(1);
   return fahrenheit;
 }
 
@@ -159,7 +159,7 @@ let celsius;
 function convertToC(fahrenheit) {
   "use strict";
   const tempCelsius = ((fahrenheit - 32) * (5/9));
-  celsius = tempCelsius.toFixed(0);
+  celsius = tempCelsius.toFixed(1);
   return celsius;
 }
 
