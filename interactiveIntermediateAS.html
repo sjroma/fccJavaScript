@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Interactive Intermediate Algorithm Scripting</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i&display=swap" rel="stylesheet">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://kit.fontawesome.com/40c7c66cc0.js"></script>
+  <link rel="stylesheet" href="styles/interactive.css">
+  <style>
+  </style>
+</head>
+
+<body>
+  <div class="container-fluid" id="page-container">
+
+    <div id="content-wrap">
+
+      <h1 class="text-center">Intermediate Algorithm Scripting</h1>
+      <h2 class="text-muted text-center">An Interactive View</h2>
+
+      <div class="row">
+        <div class="col-md-6">
+          <div id="test-describe">
+            <h4 id="descTitle" class="text-center">Choose a script from the dropdown &rarr;</h4>
+            <p id="descText">The script description will be displayed here telling you a little about it. Tests will follow showing sample input with expected output. You can input these values or a (valid) value of your own choosing.</p>
+            <h5 id="testsTitle">Test cases</h5>
+            <ul id="descTests">
+              <li>test 1</li>
+              <li>test 2</li>
+              <li>test n</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="user-interact">
+
+            <form id="form" onsubmit="userInput(); return false" class="js-selector">
+
+              <select name="script" id="dropdown" class="dropdown">
+                <option value=" " selected>Select one</option>
+                <option disabled value="sumAll">Sum All Numbers in a Range</option>
+                <option disabled value="diff">Diff Two Arrays</option>
+                <option disabled value="seek">Seek and Destroy</option>
+                <option disabled value="whereArt">Wherefore art thou</option>
+                <option disabled value="spinalTap">Spinal Tap Case</option>
+                <option disabled value="pigLatin">Pig Latin</option>
+                <option disabled value="searchReplace">Search and Replace</option>
+                <option disabled value="dna">DNA Pairing</option>
+                <option disabled value="missing">Missing Letters</option>
+                <option disabled value="sorted">Sorted Union</option>
+                <option disabled value="convertHTML">Convert HTML Entities</option>
+                <option disabled value="sumOddFibonacci">Sum All Odd Fibonacci Numbers</option>
+                <option disabled value="sumPrimes">Sum All Primes</option>
+                <option disabled value="smallest">Smallest Common Multiple</option>
+                <option disabled value="dropIt">Drop It</option>
+                <option disabled value="steamroll">Steamroller</option>
+                <option disabled value="agents">Binary Agents</option>
+                <option disabled value="allTheThings">Everything Be True</option>
+                <option disabled value="args">Arguments Optional</option>
+                <option disabled value="person">Make a Person</option>
+                <option disabled value="debris">Map the Debris</option>
+              </select>
+
+              <div class="form-group column">
+                <input class="col-md-12 input-area" name="input" type="text" id="textbox" placeholder="" autocomplete="off">
+                <input class="col-md-6 input-area2" name="input" type="text" id="number" placeholder="" autocomplete="off">
+              </div>
+
+              <div class="submit">
+                <button id="submit" type="submit" class="btn btn-primary shadow-none">Show Me</button>
+              </div>
+            </form>
+
+          </div>
+
+          <div id="output-area">
+            <p class="js-output"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="text-center" id="footer">
+      <a class="btn btn-primary shadow-none" href="index.html"><i class="fas fa-arrow-left" aria-hidden="true"></i> Back</a>
+      <a class="btn btn-info shadow-none" href="https://github.com/sjroma/fccJavaScript" target="_blank"><i class="fab fa-github" aria-hidden="true"></i> GitHub</a>
+      <p class="copy">&copy; 2019 SJRoma</p>
+    </div>
+
+  </div>
+
+  <script src="scripts/intermediateAS.js"></script>
+</body>
+
+</html>
