@@ -164,11 +164,14 @@ function convertToC(fahrenheit) {
 }
 
 //reverse a string
+let splitString;
+let reverseArray = [];
+let joinArray = [];
 function reverseString(str) {
   "use strict";
-  let splitString = str.split("");
-  let reverseArray = splitString.reverse();
-  let joinArray = reverseArray.join("");
+  splitString = str.split("");
+  reverseArray = splitString.reverse();
+  joinArray = reverseArray.join("");
   return joinArray;
 }
 
@@ -185,10 +188,11 @@ function factorialize(num) {
 }
 
 //find the longest word in a string
+let eachWord;
+let longestWord = 0;
 function findLongestWordLength(str) {
   "use strict";
-  let eachWord = str.split(" ");
-  let longestWord = 0;
+  eachWord = str.split(" ");
   for (let i = 0; i < eachWord.length; i++) {
     if (eachWord[i].length > longestWord) {
       longestWord = eachWord[i].length;
@@ -221,7 +225,7 @@ function confirmEnding(str, target) {
 }
 
 //repeat a string n number of times
-let str = '';
+let repeated = "";
 function repeatStringNumTimes(str, num) {
   "use strict";
   if (num <= 0) {
@@ -229,9 +233,9 @@ function repeatStringNumTimes(str, num) {
   } else if (num === 1) {
     return str;
   } else {
-    str = str + repeatStringNumTimes(str, num - 1);
+    repeated = str + repeatStringNumTimes(str, num - 1);
   }
-  return str;
+  return repeated;
 }
 
 //truncate a string
