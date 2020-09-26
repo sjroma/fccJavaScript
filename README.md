@@ -16,7 +16,10 @@ Working through the on-line course, _JavaScript Algorithms and Data Structures_ 
   * **Regular Expressions**  
     * Regular expressions are special strings that represent a search pattern. Also known as "regex" or "regexp", they help programmers match, search, and replace text. Regular expressions can appear cryptic because a few characters have special meaning. The goal is to combine the symbols and text into a pattern that matches what you want, but only what you want. This section will cover the characters, a few shortcuts, and the common uses for writing regular expressions.  
   * **Debugging**  
-    * Debugging is a valuable and (unfortunately) necessary tool for programmers. It follows the testing phase of checking if your code works as intended, and discovering it does not. Debugging is the process of finding exactly what isn't working and fixing it. After spending time creating a brilliant block of code, it is tough realizing it may have errors. These issues generally come in three forms: 1) syntax errors that prevent a program from running, 2) runtime errors when code fails to execute or has unexpected behavior, and 3) semantic (or logical) errors when code doesn't do what it's meant to.  
+    * Debugging is a valuable and (unfortunately) necessary tool for programmers. It follows the testing phase of checking if your code works as intended, and discovering it does not. Debugging is the process of finding exactly what isn't working and fixing it. After spending time creating a brilliant block of code, it is tough realizing it may have errors. These issues generally come in three forms:  
+    1.) syntax errors that prevent a program from running,  
+    2.) runtime errors when code fails to execute or has unexpected behavior, and  
+    3.) semantic (or logical) errors when code doesn't do what it's meant to.   
     * Modern code editors (and experience) can help identify syntax errors. Semantic and runtime errors are harder to find. They may cause your program to crash, make it run forever, or give incorrect output. Think of debugging as trying to understand why your code is behaving the way it is.  
     * Example of a syntax error - often detected by the code editor:  
       ```javascript
@@ -51,7 +54,7 @@ Working through the on-line course, _JavaScript Algorithms and Data Structures_ 
     * A computer algorithm is a sequence of steps that is followed to achieve a particular outcome. To write an algorithm, you must first understand a problem, and then solve it with coding.  
     * To make solving problems easier, it can be helpful to break them down into many chunks. Then, each chunk can be solved one by one. For example, if you are building a calculator, don't try to solve the problem as a whole. First, consider how to get inputs. Then, determine each arithmetic operation one by one. Finally, display the results.  
     * In this section we will learn to solve basic algorithm problems using JavaScript. This will help you improve your problem solving skills and prepare you to later solve more complex problems.  
-    * **HINT:** If you get stuck, try using `console.log()`to log variable values to the console. This will help to debug problems.  
+    * **HINT:** If you get stuck, try using **`console.log()`** to log variable values to the console. This will help to debug problems.  
   * **Object Oriented Programming**  
     * At its core, software development solves a problem or achieves a result with computation. The software development process first defines a problem, then presents a solution. Object oriented programming is one of several major approaches to the software development process.  
     * As its name implies, object oriented programming organizes code into object definitions. These are sometimes called classes, and they group together data with related behavior. The data is an object's attributes, and the behavior (or functions) are methods.  
